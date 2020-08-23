@@ -1,0 +1,8 @@
+[filebeatserver]
+3.82.101.55 ansible_user=ubuntu ansible_ssh_private_key_file=~/code/aws/ec2.pem
+
+[droplet]
+104.131.78.177 ansible_user=root ansible_ssh_private_key_file=~/.ssh/digitalOcean_rsa
+
+[elkservers]
+34.203.244.31 ansible_user=ubuntu ansible_ssh_private_key_file=~/code/aws/ec2.pem

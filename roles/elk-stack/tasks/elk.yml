@@ -1,0 +1,11 @@
+---
+
+- name: Get ELK from github
+  git:
+    repo: "{{ elk_repo }}"
+    dest: /home/elk-test
+
+- name: Docker-compose up elk-stack
+  docker_compose:
+    project_src: /home/elk-test
+    build: no

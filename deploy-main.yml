@@ -1,0 +1,17 @@
+---
+
+- hosts: elkservers
+  become: yes
+  roles:
+    - elk-stack
+  tags:
+    - elk
+
+
+- hosts: filebeatserver
+  become: yes
+  become_user: root
+  roles:
+    - geerlingguy.filebeat
+  tags:
+    - filebeat
